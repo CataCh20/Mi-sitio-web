@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Página Bonita</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #4a4a8c;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4a4a8c;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6f61;
+    }
+    section {
+      padding: 3rem;
+      min-height: 100vh;
+    }
+    /* Centrar títulos de secciones */
+    section h2 {
+      text-align: center;
+      color: #4a4a8c;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 1rem auto;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      background: #4a4a8c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #ff6f61;
+    }
+    .social {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .social a {
+      color: #0a66c2;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .social a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenida a Mi Página</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+ <section id="inicio">
+  <h2>Inicio ✨</h2>
+  <img src="graduación.png" alt="Imagen decorativa" style="max-width: 600px; display: block; margin: 0 auto 2rem; border-radius: 10px;">
+  <div class="card">
+    <p>Espero disfrutes mi página</p>
+  </div>
+</section>
+
+  <section id="sobre">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy Catalina. Soy Ingeniera en Sistemas con más de 4 años de experiencia en compras internacionales y Shared Services,
+    especializada en la gestión de datos, análisis de costos y tendencias del mercado.A lo largo de mi trayectoria he contribuido con 
+    estrategia de compras utilizando herramientas de Microsoft 365. Actualmente estoy aprendiendo Power BI, SAP, SQL y Google Tag Manager 
+    para fortalecer mi perfil técnico.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="social">
+      <p>También puedes encontrarme en:</p>
+      <a href="https://www.linkedin.com/in/catalina-chavarr%C3%ADa-madriz-b64479208/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mi Página Bonita - Creada con HTML y CSS</p>
+  </footer>
+
+</body>
+</html>
